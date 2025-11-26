@@ -24,7 +24,7 @@ function App() {
 
   return (
     // Yahan se pura page normal body ke sath scroll karega, koi second scroll area nahi
-    <div className="bg-white/10 min-h-screen">
+    <div className="bg-white min-h-screen">
       <BrowserRouter>
         {/* Navbar sirf tab dikhana hai jab intro khatam ho chuka ho */}
         {!showIntro && <Navbar />}
