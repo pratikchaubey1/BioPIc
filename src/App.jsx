@@ -12,6 +12,7 @@ import Dbms from './Pages/Skills/Dbms';
 import JS from './Pages/Skills/JS';
 import Tailwindcss from './Pages/Skills/Tailwindcss';
 
+
 function App() {
   const { greetings, showIntro, setShowIntro } = useUser();
 
@@ -47,6 +48,7 @@ function App() {
           <Route path='/DBMS' element={<Dbms/>}/>
           <Route path='/JS' element={<JS/>}/>
           <Route path='/Tailwind' element={<Tailwindcss/>}/>
+          
 
         </Routes>
       </BrowserRouter>
