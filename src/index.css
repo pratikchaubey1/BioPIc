@@ -23,3 +23,5 @@
 .ninja-spin-fast {
   animation: spin-fast 0.6s linear infinite !important;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400&display=swap');
