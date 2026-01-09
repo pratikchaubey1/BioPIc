@@ -1,28 +1,19 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Herosection from './Component/HandingPage/Herosection';
-import Aboutme from './Component/HandingPage/Aboutme';
-
+import Navbar from './Component/Navbar/Navbar';
+import Main from './Pages/LandingPage/Main';
 
 function App() {
- 
   return (
-   
-    <div className="bg-white min-h-screen">
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={<Herosection/>}
-          />
-          
-         
-          
+    <BrowserRouter>
+      <div className="bg-amber-50 min-h-screen">
+        <Navbar />
 
+        <Routes>
+          <Route path="/" element={<Main/>} />
         </Routes>
-      </BrowserRouter>
-      <Aboutme/>
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
