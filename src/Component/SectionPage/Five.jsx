@@ -36,7 +36,7 @@ function Five() {
               className="text-4xl md:text-6xl mb-6 tracking-[0.3em]"
               style={{ fontFamily: "'Playfair Display', serif" }}
             >
-              SOUL + CINEMA
+              SOUL+CINEMA
             </h1>
 
             <p
@@ -58,7 +58,7 @@ function Five() {
       <div className="py-24 flex flex-col items-center justify-center text-center">
 
         <h1
-          className="text-xl md:text-5xl mb-2 tracking-[0.1em]"
+          className="text-xl md:text-3xl mb-2 tracking-[0.2em]"
           style={{ fontFamily: "'Playfair Display', serif" }}
         >
           AWARD WINNING FILMS
