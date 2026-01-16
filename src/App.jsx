@@ -6,7 +6,7 @@ import Main from './Pages/LandingPage/Main';
 function App() {
   return (
     <BrowserRouter>
-      <div className="bg-amber-50 min-h-screen">
+      <div className="bg-[#f3eee6] min-h-screen overflow-hidden">
         <Navbar />
 
         <Routes>
