@@ -1,44 +1,54 @@
 import React from "react";
 import banner from "../../assets/banner.png";
 import headline from "../../assets/headline.webp";
+import Logo from "../../assets/logotwo.webp";
+import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { useUser } from "../../Context/Context";
 
 function Bannersection() {
+  const { landingPageData } = useUser();
+  const data = landingPageData?.bannerSection;
+
   return (
-    <div className=" bg-[#f3eee6] py-12">
-      <div className="w-full h-[70vh] overflow-hidden -translate-y-60">
+    <div className="bg-[#f3eee6] py-12 flex flex-col items-center -translate-y-70">
+      {/* Main Banner Image */}
+      <div className="w-full h-[60vh] md:h-[70vh] overflow-hidden mb-12">
         <img
           src={banner}
           alt="Banner"
           className="w-full h-full object-cover object-[center_29%]"
         />
       </div>
-      <div className=" -translate-y-223 translate-x-36 max-w-xl  ">
-        <div className="w-full h-[100px] overflow-hidden">
-          <img
-            src={headline}
-            alt="headline"
-            className="w-full h-full object-cover object-left"
-          />
-        </div>
 
-        <p
-          className="max-w-2xl mx-auto text-sm md:text-base leading-normal opacity-60"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
-        >
-          Ibtida is our finest offering with fine-art editorial style
-          photography lead by Siddharth Sharma, founder of House On The Clouds.
-          The essence of Ibtida is to create photographs that stand the test of
-          time. The classic, non-intrusive approach of documenting the most
-          important day of your life with bright and airy images that take you
-          back in time. This is an exclusive package which we offer to selected
-          weddings only and we believe this deserves a website of its own. Click
-          below to visit Ibtida.Co
-        </p>
-        <button className="bg-[#97824e] hover:opacity-90 text-white px-9 py-6 text-sm tracking-wide rounded-md -translate-x- translate-y-5">
-          {" "}
-          Visit Ibtido.Co
-        </button>
+      {/* Content Section */}
+      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+
+        {/* Text Side (Left/Center) */}
+        <div className="flex flex-col gap-8 max-w-xl -translate-y-170">
+          {/* Headline Image */}
+          <div className="w-full max-w-md overflow-hidden ">
+            <img
+              src={headline}
+              alt="Headline"
+              className="w-full h-auto object-contain object-left"
+            />
+          </div>
+
+          <p
+            className="text-sm md:text-base leading-relaxed opacity-80"
+            style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          >
+            {data?.description}
+          </p>
+
+          <button className="bg-[#97824e] hover:opacity-90 text-white px-9 py-4 text-sm tracking-wide rounded-md w-fit transition-all duration-300 shadow-md">
+            {data?.buttonText}
+          </button>
+        </div>
       </div>
+
+      {/* Footer Section */}
+
     </div>
   );
 }

@@ -20,16 +20,15 @@ function Herosection() {
       />
 
       {/* DARK OVERLAY */}
-      
+
 
       {/* VIGNETTE */}
-      
+
 
       {/* FILM GRAIN */}
       <div className="absolute inset-0 noise opacity-20 pointer-events-none z-30" />
 
-      {/* EMPTY CONTENT SPACE (HOTC STYLE) */}
-      <div className="relative z-40 min-h-screen" />
+
 
     </section>
   );

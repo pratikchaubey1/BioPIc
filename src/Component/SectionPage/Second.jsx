@@ -4,7 +4,10 @@ import right from "../../assets/right.webp";
 import headingImg from "../../assets/heading.webp";
 import brandsImg from "../../assets/brands.webp";
 
+import { useUser } from "../../Context/Context";
+
 function Second() {
+  const { landingPageData } = useUser();
   return (
     <section className="bg-[#f3eee6] py-32 overflow-hidden">
       <div className="max-w-7xl mx-auto px-8">
@@ -24,21 +27,14 @@ function Second() {
                 className="text-[15px] leading-7 w-[510px] whitespace-pre-wrap translate-y-40"
                 style={{ fontFamily: "'Libre Baskerville', serif" }}
               >
-                Considered to be the epitome of Modern Photography and
-                Filmmaking, HOTC has transformed the Indian Wedding landscape on
-                a regular basis. For almost a decade House On The Clouds has
-                been creating photographs and films which are timeless and have
-                been etched in memories of thousands of people forever.
+                {landingPageData?.secondSection?.paragraph1}
               </p>
 
               <p
                 className="text-[15px] leading-7 w-[510px] whitespace-pre-wrap mt-6 translate-y-40"
                 style={{ fontFamily: "'Libre Baskerville', serif" }}
               >
-                Awarded as the Wedding Filmmaker of the year for four
-                consecutive years at the Weddingsutra awards along with numerous
-                other awards HOTC is the only company listed on IMDB for its
-                award winning films.
+                {landingPageData?.secondSection?.paragraph2}
               </p>
             </div>
           </div>

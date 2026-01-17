@@ -1,42 +1,39 @@
-import React from "react";
+import React from 'react'
 import Logo from "../../assets/logotwo.webp";
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { useUser } from "../../Context/Context";
 
-function Footer() {
+export default function Footer() {
+    const { landingPageData } = useUser();
+      const data = landingPageData?.bannerSection;
   return (
-    <div className="">
-      <div className="w-full h-[70vh] overflow-hidden flex flex-col items-center justify-center gap-6 -translate-x-180 -translate-y-200">
+    <div>
+            <div className="w-full mt-auto flex flex-col items-center justify-center gap-8 pt-10 border-t border-[#97824e]/20">
         <img
           src={Logo}
           alt="Logo"
-          className="w-[100px] h-auto object-contain"
+          className="w-[100px] h-auto object-contain opacity-90"
         />
 
         {/* Icons */}
-        <div className="flex gap-6 -translate-y-5">
-          <FaInstagram className="text-black text-xl cursor-pointer" />
-          <FaFacebookF className="text-black text-xl cursor-pointer" />
-          <FaXTwitter className="text-black text-xl cursor-pointer" />
-        </div>
-         <div
-          className="flex justify-between items-center leading-normal gap-8"
-          style={{ fontFamily: "'Cormorant Garamond', bold" }}
-        >
-          <p>Mumbai . Bangalore</p>
-          <p>+91 9621549873</p>
+        <div className="flex gap-8">
+          <FaInstagram className="text-black/70 hover:text-black text-xl cursor-pointer transition-colors" />
+          <FaFacebookF className="text-black/70 hover:text-black text-xl cursor-pointer transition-colors" />
+          <FaXTwitter className="text-black/70 hover:text-black text-xl cursor-pointer transition-colors" />
         </div>
 
-        <div
-          className="flex justify-between items-center leading-normal gap-8 mt-2"
-          style={{ fontFamily: "'Cormorant Garamond', bold" }}
-        >
-          <p>Privacy Policy</p>
-          <p>hello@houseone.com</p>
+        <div className="text-center md:text-left flex flex-col md:flex-row gap-8 md:gap-16 text-sm opacity-70" style={{ fontFamily: "'Cormorant Garamond', serif", fontWeight: 'bold' }}>
+          <div className="flex gap-8">
+            <p>{data?.contact?.locations}</p>
+            <p>{data?.contact?.phone}</p>
+          </div>
+
+          <div className="flex gap-8">
+            <p>Privacy Policy</p>
+            <p>{data?.contact?.email}</p>
+          </div>
         </div>
       </div>
-     
     </div>
-  );
+  )
 }
-
-export default Footer;
