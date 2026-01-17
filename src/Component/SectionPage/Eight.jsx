@@ -8,7 +8,9 @@ import six from "../../assets/msix.webp";
 import seven from "../../assets/mseven.webp";
 import tone from "../../assets/tone.webp";
 import ttwo from "../../assets/ttwo.webp";
-import banner from '../../assets/vbanner.png'
+import banner from '../../assets/banner.png'
+import headline from '../../assets/headline.webp'
+
 
 function Eight() {
   const item = [
@@ -62,7 +64,7 @@ function Eight() {
           ))}
         </div>
       </div>
-      
+     
     </div>
   );
 }

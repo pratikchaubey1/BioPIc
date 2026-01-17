@@ -24,7 +24,7 @@ function Four() {
   ]);
 
   return (
-    <section className="bg-[#f3eee6] py-20">
+    <section className="bg-[#f3eee6] py-20 -translate-y-20">
       <div className="max-w-8xl mx-auto px-6">
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2">

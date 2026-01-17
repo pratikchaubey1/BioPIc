@@ -38,7 +38,7 @@ function Three() {
   ]);
 
   return (
-    <div className="w-screen bg-[#f6f2e9]">
+    <div className="w-screen bg-[#f6f2e9] -translate-y-20">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-[2px]">
 
         {items.map((item) => (

@@ -6,7 +6,8 @@ import Four from '../../Component/SectionPage/Four'
 import Five from '../../Component/SectionPage/Five'
 import Six from '../../Component/SectionPage/Six'
 import Seven from '../../Component/SectionPage/Seven'
-import Eight from '../../Component/SectionPage/eight'
+import Eight from '../../Component/SectionPage/Eight'
+import BannerSection from '../../Component/SectionPage/Bannersection'
 
 function Main() {
   return (
@@ -19,6 +20,7 @@ function Main() {
       <Six/>
       <Seven/>
       <Eight/>
+      <BannerSection/>
     </div>
   )
 }
