@@ -18,21 +18,23 @@ function Footer() {
           <FaFacebookF className="text-black text-xl cursor-pointer" />
           <FaXTwitter className="text-black text-xl cursor-pointer" />
         </div>
-        <div
-          className=" flex flex-col justify-between leading-normal "
-          style={{ fontFamily: "'Cormorant Garamond',bold" }}
-        >
-          <p>Mumbai . Banglore</p>
-          <p>+91 9621549873</p>
-        </div>
-        <div
-          className=" flex flex-col justify-between leading-normal "
+         <div
+          className="flex justify-between items-center leading-normal gap-8"
           style={{ fontFamily: "'Cormorant Garamond', bold" }}
         >
-          <p> Privacy Policy </p>
+          <p>Mumbai . Bangalore</p>
+          <p>+91 9621549873</p>
+        </div>
+
+        <div
+          className="flex justify-between items-center leading-normal gap-8 mt-2"
+          style={{ fontFamily: "'Cormorant Garamond', bold" }}
+        >
+          <p>Privacy Policy</p>
           <p>hello@houseone.com</p>
         </div>
       </div>
+     
     </div>
   );
 }
