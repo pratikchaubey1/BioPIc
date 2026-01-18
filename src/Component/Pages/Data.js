@@ -1,9 +1,9 @@
 import One from "../../assets/Editorial/eone.gif";
 import Two from "../../assets/Editorial/etwo.webp";
-import Three from "../../assets/Editorial/ethree.webp";
+import Three from "../../assets/Editorial/ethree.gif";
 import Four from "../../assets/Editorial/efour.webp";
 import Five from "../../assets/Editorial/efive.webp";
-import Six from "../../assets/Editorial/esix.webp";
+import Six from "../../assets/Editorial/esix.gif";
 import Seven from "../../assets/Editorial/eseven.webp";
 import Eight from "../../assets/Editorial/eeight.webp";
 import Nine from "../../assets/Editorial/enine.webp";
@@ -15,16 +15,15 @@ import Fourteen from "../../assets/Editorial/efourteen.webp";
 import Fifteen from "../../assets/Editorial/efifteen.webp";
 import Sixteen from "../../assets/Editorial/esixteen.webp";
 import Seventeen from "../../assets/Editorial/eseventeen.webp";
-import Eighteen from "../../assets/Editorial/eeighteen.webp";
+import Eighteen from "../../assets/Editorial/eeightteen.webp";
 import Nineteen from "../../assets/Editorial/enineteen.webp";
 import Twenty from "../../assets/Editorial/etwinty.webp";
-import TwentyOne from "../../assets/Editorial/etwintyone.webp";
 import TwentyTwo from "../../assets/Editorial/etwintytwo.webp";
 import TwentyThree from "../../assets/Editorial/etwintythree.webp";
 import TwentyFour from "../../assets/Editorial/etwintyfour.webp";
 import TwentyFive from "../../assets/Editorial/etwintyfive.webp";
 import TwentySix from "../../assets/Editorial/etwintysix.webp";
-import TwentySeven from "../../assets/Editorial/etwintyseven.webp";
+
 
 const editorialData = [
   { id: 1, img: One },
@@ -47,13 +46,12 @@ const editorialData = [
   { id: 18, img: Eighteen },
   { id: 19, img: Nineteen },
   { id: 20, img: Twenty },
-  { id: 21, img: TwentyOne },
   { id: 22, img: TwentyTwo },
   { id: 23, img: TwentyThree },
   { id: 24, img: TwentyFour },
   { id: 25, img: TwentyFive },
   { id: 26, img: TwentySix },
-  { id: 27, img: TwentySeven },
+  
 ];
 
 export default editorialData;

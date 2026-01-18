@@ -1,39 +1,40 @@
-// import React from "react";
-// import editorialData from "./Data";
-// import { Link } from "react-router-dom";
-
-// function Editorial() {
-//   return (
-//     <section className="bg-[#f3efe6] py-16">
-//       <div className="max-w-[1200px] mx-auto px-6">
-
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-//           {editorialData.map((item) => (
-//             <div key={item.id}>
-//               <Link to={`/editorial/${item.id}`}>
-//                 <img
-//                   src={item.img}
-//                   alt={`Editorial ${item.id}`}
-//                   className="w-full h-[360px] object-cover"
-//                 />
-//               </Link>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// export default Editorial;
-import React from 'react'
+import React from "react";
+import editorialData from "./Data";
+import { Link } from "react-router-dom";
 
 function Editorial() {
   return (
-    <div>
-      
-    </div>
-  )
+    <section className="bg-[#f3efe6] py-12 mt-39">
+      <div className="mx-auto max-w-[1700px] px-4">
+
+        {/* Masonry Layout */}
+        <div
+          className="
+            columns-2
+            sm:columns-3
+            md:columns-4
+            lg:columns-6
+            gap-[6px]
+          "
+        >
+          {editorialData.map((item) => (
+            <Link
+              key={item.id}
+              to={`/editorial/${item.id}`}
+              className="mb-[6px] block break-inside-avoid"
+            >
+              <img
+                src={item.img}
+                alt={`Editorial ${item.id}`}
+                className="w-full h-auto object-cover"
+              />
+            </Link>
+          ))}
+        </div>
+
+      </div>
+    </section>
+  );
 }
 
-export default Editorial
+export default Editorial;

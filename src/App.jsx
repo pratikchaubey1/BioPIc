@@ -6,6 +6,7 @@ import Main from './Pages/LandingPage/Main';
 import Photography from './Component/Pages/Photography';
 import { Film } from 'lucide-react';
 import Editorial from './Component/Pages/Editorial';
+import One from './Component/Pages/One';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path='/Photography' element={<Photography/>}/>
-            <Route path='/Films' element={<Film/>}/>
+            <Route path='/Films' element={<One/>}/>
             <Route path='/Editorial' element={<Editorial/>}/>
           </Routes>
         </div>
