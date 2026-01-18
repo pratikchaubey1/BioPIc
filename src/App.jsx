@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Component/Navbar/Navbar';
 import Main from './Pages/LandingPage/Main';
 import Photography from './Component/Pages/Photography';
+import { Film } from 'lucide-react';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Main />} />
             <Route path='/Photography' element={<Photography/>}/>
+            <Route path='/Films' element={<Film/>}/>
           </Routes>
         </div>
       </BrowserRouter>

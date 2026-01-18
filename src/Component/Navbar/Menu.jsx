@@ -6,7 +6,7 @@ function Menu() {
 
   const navLinks = [
     { name: "Photography", path: "/photography" },
-    { name: "Films", path: "/films" },
+    { name: "Films", path: "/Films" },
     { name: "Contact Us", path: "/contact" },
     { name: "Editorial", path: "/editorial" },
     { name: "More", path: "/more" },

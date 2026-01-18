@@ -15,40 +15,40 @@ function Photography() {
 
   return (
     // Page background
-    <div className="bg-[#f3efe6] py-20">
-      <div className="max-w-7xl mx-auto px-6">
+    <div className="bg-[#f3efe6] py-12 overflow-hidden">
+      <div className="max-w-[135vh] mx-auto px-6 ">
 
         {/* White Container (like image) */}
         <div className="bg-white rounded-[35px] px-5 py-10 translate-y-40">
 
           {/* Select Filter */}
-          <div className="text-center mb-14 text-sm text-[#2b2b2b]">
+          <div className="text-center mb-14 text-sm text-[#2b2b2b] -translate-y-10">
             Select:
             <button
               onClick={() => setFilter("All")}
-              className={`ml-3 ${
+              className={`ml-1 ${
                 filter === "All" ? "underline" : ""
               }`}
             >
-              All
+            All
             </button>
             |
             <button
               onClick={() => setFilter("International")}
-              className={`ml-3 ${
+              className={`ml-1 ${
                 filter === "International" ? "underline" : ""
               }`}
             >
-              International
+            International
             </button>
             |
             <button
               onClick={() => setFilter("Indian")}
-              className={`ml-3 ${
+              className={`ml-1 ${
                 filter === "Indian" ? "underline" : ""
               }`}
             >
-              Indian
+            Indian
             </button>
           </div>
 
@@ -63,29 +63,36 @@ function Photography() {
                     <img
                       src={item.img}
                       alt={item.name}
-                      className="w-full h-80 object-cover  transition duration-500"
+                      className="w-full h-100 object-cover  transition duration-500"
                     />
                   </div>
                 </Link>
 
                 {/* Content */}
                 <div className="mt-4 text-[#2b2b2b]">
-                  <h2 className="text-base font-medium mb-2">
+                  <h2 className="text-base font-medium mb-2" 
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  >
                     {item.name}
                   </h2>
 
-                  <p className="text-sm leading-relaxed mb-3 line-clamp-5">
+                  <p className="text-sm leading-relaxed mb-3 line-clamp-5"
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  >
                     {item.des}
                   </p>
 
                   <Link
                     to={`/photography/${index}`}
                     className="text-sm hover:underline"
+                    style={{ fontFamily: "'Cormorant Garamond', serif" }}
                   >
                     Read More →
                   </Link>
 
-                  <p className="text-xs tracking-wide uppercase mt-3">
+                  <p className="text-xs tracking-wide uppercase mt-3"
+                  style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                  >
                     {item.contry}
                   </p>
                 </div>
