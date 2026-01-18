@@ -8,7 +8,7 @@ function Menu() {
     { name: "Photography", path: "/photography" },
     { name: "Films", path: "/Films" },
     { name: "Contact Us", path: "/contact" },
-    { name: "Editorial", path: "/editorial" },
+    { name: "Editorial", path: "/Editorial" },
     { name: "More", path: "/more" },
   ];
 

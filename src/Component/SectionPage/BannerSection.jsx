@@ -1,7 +1,7 @@
 import React from "react";
 import banner from "../../assets/banner.png";
-import headline from "../../assets/headline.webp";
 import Logo from "../../assets/logotwo.webp";
+import Headline from '../../assets/headline.webp'
 import { FaFacebookF, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { useUser } from "../../Context/Context";
 
@@ -10,46 +10,43 @@ function Bannersection() {
   const data = landingPageData?.bannerSection;
 
   return (
-    <div className="bg-[#f3eee6] py-12 flex flex-col items-center -translate-y-70">
-      {/* Main Banner Image */}
-      <div className="w-full h-[60vh] md:h-[70vh] overflow-hidden mb-12">
+    <section className="w-full bg-[#f3eee6] ">
+
+      {/* ================= HERO ================= */}
+      <div className="relative w-full h-[80vh] min-h-[540px] -mt-60">
         <img
           src={banner}
-          alt="Banner"
-          className="w-full h-full object-cover object-[center_29%]"
+          alt="Hero"
+          className="absolute inset-0 w-full h-full object-cover"
         />
-      </div>
+        <div className="absolute inset-0 bg-black/20" />
 
-      {/* Content Section */}
-      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
+        <div className="relative z-10 max-w-7xl mx-auto h-full px-6 flex items-center">
+          <div className="max-w-xl text-white space-y-6">
+            <h1
+              className="text-4xl md:text-5xl font-light tracking-wide"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
+              <img src={Headline} alt="" />
+            </h1>
 
-        {/* Text Side (Left/Center) */}
-        <div className="flex flex-col gap-8 max-w-xl -translate-y-170">
-          {/* Headline Image */}
-          <div className="w-full max-w-md overflow-hidden ">
-            <img
-              src={headline}
-              alt="Headline"
-              className="w-full h-auto object-contain object-left"
-            />
+            <p
+              className="text-sm md:text-base opacity-90 leading-relaxed"
+              style={{ fontFamily: "'Cormorant Garamond', serif" }}
+            >
+              {data?.description}
+            </p>
+
+            <button className="bg-[#a38a55] hover:opacity-90 text-white px-8 py-3 text-sm tracking-wide rounded-md transition">
+              Visit Ibtida.Co
+            </button>
           </div>
-
-          <p
-            className="text-sm md:text-base leading-relaxed opacity-80"
-            style={{ fontFamily: "'Cormorant Garamond', serif" }}
-          >
-            {data?.description}
-          </p>
-
-          <button className="bg-[#97824e] hover:opacity-90 text-white px-9 py-4 text-sm tracking-wide rounded-md w-fit transition-all duration-300 shadow-md">
-            {data?.buttonText}
-          </button>
         </div>
       </div>
 
-      {/* Footer Section */}
-
-    </div>
+      {/* ================= FOOTER / OUTRO ================= */}
+  
+    </section>
   );
 }
 
