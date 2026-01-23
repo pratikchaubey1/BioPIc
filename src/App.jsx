@@ -7,6 +7,7 @@ import Photography from './Component/Pages/Photography';
 import { Film } from 'lucide-react';
 import Editorial from './Component/Pages/Editorial';
 import One from './Component/Pages/One';
+import ContectUs from './Component/Pages/ContectUs';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path='/Photography' element={<Photography/>}/>
             <Route path='/Films' element={<One/>}/>
             <Route path='/Editorial' element={<Editorial/>}/>
+            <Route path='/Contact' element={<ContectUs/>}/>
           </Routes>
         </div>
       </BrowserRouter>
